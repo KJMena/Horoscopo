@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Horoscopo Chino</title>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">Horóscopo Chino</a></h1>    </header>
+
+    <section id="titulo">
+        <h2>
+            <a>  ¿Quieres conocer tu Horóscopo Chino?</a>
+        </h2>
+        <button class="azul" onclick="mostrarHoroscopo()">¡Por supuesto!</button>
+    </section>
+
+    <section id="anioo" style="display: none;">
+        <input type="number" id="anio" placeholder="Ingresa tu año de nacimiento">
+        <button class="azul" onclick="mostrarDatos()">Calcular Signo</button>
+    </section>
+
+    <article >
+        <h2 id="signoChino"></h2>
+        <img id="imagenSigno" src="./img/chino.png" alt="Imagen del signo">
+    </article>
+
+        <article id="resultado" style="display: none;">
+            <table id="tablaHoroscopo">
+                <thead>
+                    <tr>
+                        <th>Residuo</th>
+                        <th>Signo</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </article>
+ 
+
+
+</body>
+<script src="./javascript/funciones.js"></script>
+
+</html>
